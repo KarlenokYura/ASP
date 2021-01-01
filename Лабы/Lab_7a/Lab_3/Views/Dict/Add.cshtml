@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+    <h1>Add</h1>
+    @using (Html.BeginForm())
+    {
+        <div>
+            <p><input type="text" id="surname" name="surname" placeholder="surname"/></p>
+            <p><input type="number" id="number" name="number" min="0" max="999999999" placeholder="number"></p>
+            <p><input type="submit" onclick="Add()"></p>
+        </div>
+    }
+    <script>
+        var Add = () => {
+            var http = new XMLHttpRequest();
+
+            var json = JSON.stringify({
+                surname: document.getElementById('surname').value,
+                number: document.getElementById('number').value
+            });
+
+            http.open('POST', "/TS", true);
+            http.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+            http.onreadystatechange = function () {
+                if (http.readyState == 4 && http.status == 200) {
+                    window.location.replace("/");
+                }
+            }
+            http.send(json);
+        }
+    </script>
+</body>
+</html>

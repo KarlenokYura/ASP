@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add (Layout body)</h2>
+<form method="post">
+    <div>
+        <p><input type="text" id="surname" name="surname" /></p>
+        <p><input type="number" id="number" name="number" min="0" max="999999999"></p>
+        <p><input type="submit"></p>
+    </div>
+</form>
+
+@section Header {
+    <h2>MVC with Entity Framework (Layout header)</h2>
+}
+
+@section Footer {
+    <h2>(Layout footer)</h2>
+}

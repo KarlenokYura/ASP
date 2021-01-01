@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<div>
+    <p><input type="text" id="surname" name="surname" placeholder="surname" /></p>
+    <p><input type="number" id="number" name="number" min="0" max="999999999" placeholder="number"></p>
+    <p><input type="submit" onclick="Message()"></p>
+</div>
+
+<p>Use this area to provide additional information.</p>
+
+<script>
+    var Message = () => {
+        var surname = document.getElementById('surname').value;
+        var number = document.getElementById('number').value;
+        alert("Your name is " + surname + ", your number is " + number);
+    }
+</script>

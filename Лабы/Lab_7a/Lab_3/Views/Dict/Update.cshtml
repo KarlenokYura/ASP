@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Update</title>
+</head>
+<body>
+    <h1>Update</h1>
+    @using (Html.BeginForm())
+    {
+        <div>
+            <p><input type="number" id="id" name="id" min="0" placeholder="id"></p>
+            <p><input type="text" id="surname" name="surname" placeholder="surname"/></p>
+            <p><input type="number" id="number" name="number" min="0" max="999999999" placeholder="number"></p>
+            <p><input type="submit" onclick="Update()"></p>
+        </div>
+    }
+    <script>
+        var Update = () => {
+            var http = new XMLHttpRequest();
+
+            var json = JSON.stringify({
+                id: document.getElementById('id').value,
+                surname: document.getElementById('surname').value,
+                number: document.getElementById('number').value
+            });
+
+            http.open('PUT', "/TS", true);
+            http.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+            http.onreadystatechange = function () {
+                if (http.readyState == 4 && http.status == 200) {
+                    window.location.replace("/");
+                }
+            }
+            http.send(json);
+        }
+    </script>
+</body>
+</html>

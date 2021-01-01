@@ -1,0 +1,8 @@
+D:\ASP\Лабы\Lab_6 JSON\TelephoneDll\bin\Release\TelephoneDll.dll
+D:\ASP\Лабы\Lab_6 JSON\TelephoneDll\bin\Release\TelephoneDll.pdb
+D:\ASP\Лабы\Lab_6 JSON\TelephoneDll\bin\Release\Newtonsoft.Json.dll
+D:\ASP\Лабы\Lab_6 JSON\TelephoneDll\bin\Release\Newtonsoft.Json.xml
+D:\ASP\Лабы\Lab_6 JSON\TelephoneDll\obj\Release\TelephoneDll.csproj.CoreCompileInputs.cache
+D:\ASP\Лабы\Lab_6 JSON\TelephoneDll\obj\Release\TelephoneDll.csproj.CopyComplete
+D:\ASP\Лабы\Lab_6 JSON\TelephoneDll\obj\Release\TelephoneDll.dll
+D:\ASP\Лабы\Lab_6 JSON\TelephoneDll\obj\Release\TelephoneDll.pdb

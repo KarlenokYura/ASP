@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h1>Delete</h1>
+    @using (Html.BeginForm())
+    {
+        <div>
+            <p><input type="number" id="id" name="id" min="1"></p>
+            <p><input type="submit" onclick="Delete()"></p>
+        </div>
+    }
+    <script>
+        var Delete = () => {
+            var http = new XMLHttpRequest();
+
+            var json = JSON.stringify({
+                id: document.getElementById('id').value,
+            });
+
+            http.open('DELETE', "/TS", true);
+            http.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+            http.onreadystatechange = function () {
+                if (http.readyState == 4 && http.status == 200) {
+                    window.location.replace("/");
+                }
+            }
+            http.send(json);
+        }
+    </script>
+</body>
+</html>

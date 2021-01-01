@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+    List<TelephoneDll.Telephone> telephones1 = ViewBag.selectAll1;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>MVC with JSON</h1>
+        @foreach (TelephoneDll.Telephone telephone in telephones1)
+        {
+            <p>[@telephone.id] @telephone.surname - @telephone.number</p>
+        }
+        <h2>@Html.ActionLink("Add", "Add")</h2>
+        <h2>@Html.ActionLink("Update", "Update")</h2>
+        <h2>@Html.ActionLink("Delete", "Delete")</h2>
+    </div>
+</body>
+</html>

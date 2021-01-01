@@ -1,0 +1,47 @@
+﻿@using Lab_3.Models
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body onload="Get()">
+    <div>
+        <h2>Get All</h2>
+        <div id="list">
+
+        </div>
+        <h2>@Html.ActionLink("Add", "Add")</h2>
+        <h2>@Html.ActionLink("Update", "Update")</h2>
+        <h2>@Html.ActionLink("Delete", "Delete")</h2>
+    </div>
+
+    <script>
+        var Get = () => {
+            var http = new XMLHttpRequest();
+
+            http.open("GET", "/TS", true);
+            http.onreadystatechange = function () {
+                if (http.readyState == 4 && http.status == 200) {
+                    var res = JSON.parse(http.responseText);
+                    if (res) {
+                        let body = document.getElementById('list');
+                        let list = '';
+                        res.forEach(telephone => {
+                            list +=
+                                `<p>[${telephone.id}] - ${telephone.surname} - ${telephone.number}</p>`;
+                        });
+                        body.innerHTML = list;
+                    }
+                }
+            }
+            http.send();
+        }
+    </script>
+</body>
+</html>

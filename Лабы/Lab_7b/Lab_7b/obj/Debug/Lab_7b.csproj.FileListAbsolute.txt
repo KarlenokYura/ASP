@@ -1,0 +1,13 @@
+D:\ASP\Лабы\Lab_7b\Lab_7b\bin\Debug\Lab7b.exe.config
+D:\ASP\Лабы\Lab_7b\Lab_7b\bin\Debug\Lab7b.exe
+D:\ASP\Лабы\Lab_7b\Lab_7b\bin\Debug\Lab7b.pdb
+D:\ASP\Лабы\Lab_7b\Lab_7b\bin\Debug\Newtonsoft.Json.dll
+D:\ASP\Лабы\Lab_7b\Lab_7b\bin\Debug\Newtonsoft.Json.xml
+D:\ASP\Лабы\Lab_7b\Lab_7b\obj\Debug\Lab7b.Form1.resources
+D:\ASP\Лабы\Lab_7b\Lab_7b\obj\Debug\Lab7b.Properties.Resources.resources
+D:\ASP\Лабы\Lab_7b\Lab_7b\obj\Debug\Lab_7b.csproj.GenerateResource.cache
+D:\ASP\Лабы\Lab_7b\Lab_7b\obj\Debug\Lab_7b.csproj.CoreCompileInputs.cache
+D:\ASP\Лабы\Lab_7b\Lab_7b\obj\Debug\Lab_7b.csproj.CopyComplete
+D:\ASP\Лабы\Lab_7b\Lab_7b\obj\Debug\Lab7b.exe
+D:\ASP\Лабы\Lab_7b\Lab_7b\obj\Debug\Lab7b.pdb
+D:\ASP\Лабы\Lab_7b\Lab_7b\obj\Debug\Lab_7b.csprojAssemblyReference.cache
